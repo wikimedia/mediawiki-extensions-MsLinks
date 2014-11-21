@@ -3,7 +3,7 @@
 $wgExtensionCredits['parserhook'][] = array(
 	'name' => 'MsLinks',
 	'url' => 'https://www.mediawiki.org/wiki/Extension:MsLinks',
-	'version' => '3.0',
+	'version' => '4.0',
 	'descriptionmsg' => 'msl-desc',
 	'license-name' => 'GPLv2+',
 	'author' => array( '[mailto:wiki@ratin.de Martin Schwindl]', '[mailto:wiki@keyler-consult.de Martin Keyler]', '[https://www.mediawiki.org/wiki/User:Luis_Felipe_Schenone Luis Felipe Schenone]' ),
