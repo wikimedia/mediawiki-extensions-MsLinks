@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Luis Felipe Schenone"
+		]
+	},
+	"msl-desc": "Creates links to view or download files using icons appropriate to the file type",
+	"msl-tooltip": "Direct link",
+	"msl-example-filename": "Filename.ext"
+}
