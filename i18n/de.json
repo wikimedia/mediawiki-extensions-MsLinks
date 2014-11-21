@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Luis Felipe Schenone"
+		]
+	},
+	"msl-desc": "Erzeugt einem Link mit dem passenden Icon sowie einen Direkt- und Versionslink",
+	"msl-tooltip": "Direktlink",
+	"msl-example-filename": "Dateiname.ext"
+}
