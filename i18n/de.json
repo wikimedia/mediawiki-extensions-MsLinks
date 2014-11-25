@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Luis Felipe Schenone"
+			"Luis Felipe Schenone",
+			"Metalhead64"
 		]
 	},
-	"msl-desc": "Erzeugt einem Link mit dem passenden Icon sowie einen Direkt- und Versionslink",
+	"msl-desc": "Erzeugt Links zum Betrachten oder Herunterladen von Dateien mithilfe dem Dateityp entsprechender Symbole",
 	"msl-tooltip": "Direktlink",
 	"msl-example-filename": "Dateiname.ext"
 }
