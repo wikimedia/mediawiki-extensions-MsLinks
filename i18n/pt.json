@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Vitorvicentevalente"
+		]
+	},
+	"msl-desc": "Cria ligações para consultar ou descarregar ficheiros que utilizem ícones apropriados à extensão do ficheiro",
+	"msl-tooltip": "Ligação direta",
+	"msl-example-filename": "Nomedoficheiro.ext"
+}

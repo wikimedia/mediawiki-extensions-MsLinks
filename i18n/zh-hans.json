@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Liuxinyu970226"
+		]
+	},
+	"msl-desc": "创建链接以查看或下载使用相应文件类型的图标文件",
+	"msl-tooltip": "直接链接",
+	"msl-example-filename": "文件名.ext"
+}
