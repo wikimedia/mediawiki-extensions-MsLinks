@@ -1,8 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"WikiPhoenix"
+			"WikiPhoenix",
+			"Bittin",
+			"Victorsa"
 		]
 	},
-	"msl-tooltip": "Direkt länk"
+	"msl-tooltip": "Direktlänk",
+	"msl-example-filename": "Filnamn.ext"
 }
