@@ -4,7 +4,7 @@
 			"Luis Felipe Schenone"
 		]
 	},
-	"msl-desc": "{{desc|name=MsWikiEditor|url=https://www.mediawiki.org/wiki/Extension:MsWikiEditor}}",
+	"msl-desc": "{{desc|name=MsLinks|url=https://www.mediawiki.org/wiki/Extension:MsLinks}}",
 	"msl-tooltip": "Tooltip to the button for inserting links",
 	"msl-example-filename": "Name of the example file"
 }
