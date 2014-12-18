@@ -3,9 +3,11 @@
 		"authors": [
 			"WikiPhoenix",
 			"Bittin",
-			"Victorsa"
+			"Victorsa",
+			"Lokal Profil"
 		]
 	},
+	"msl-desc": "Skapar länkar för att visa eller ladda ner filer med hjälp av ikoner lämpligt att den filtyp",
 	"msl-tooltip": "Direktlänk",
 	"msl-example-filename": "Filnamn.ext"
 }
