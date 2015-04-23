@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Xuacu"
+		]
+	},
+	"msl-desc": "Crea enllaces pa ver o descargar ficheros, usando iconos apropiaos pal tipu de ficheru",
+	"msl-tooltip": "Enllaz direutu",
+	"msl-example-filename": "Nomeficheru.ext"
+}
