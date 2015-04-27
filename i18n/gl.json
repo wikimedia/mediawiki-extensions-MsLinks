@@ -1,8 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Banjo"
+			"Banjo",
+			"Elisardojm"
 		]
 	},
-	"msl-tooltip": "Ligazón directa"
+	"msl-desc": "Crea ligazóns para ver ou descargar ficheiros usando iconas axeitadas ó tipo de ficheiro",
+	"msl-tooltip": "Ligazón directa",
+	"msl-example-filename": "Nome do ficheiro.ext"
 }
