@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Dinhxuanduyet"
+		]
+	},
+	"msl-desc": "Tạo các liên kết để xem hoặc download các file sử dụng biểu tượng tương ứng với kiểu file",
+	"msl-tooltip": "Liên kết trục tiếp",
+	"msl-example-filename": "Tên_file.exe"
+}
