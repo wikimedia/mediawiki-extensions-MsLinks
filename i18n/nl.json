@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Esketti"
+		]
+	},
+	"msl-desc": "Maakt links voor het weergeven of downloaden van bestanden met behulp van pictogrammen geschikt om het bestand type",
+	"msl-tooltip": "Directe link",
+	"msl-example-filename": "Bestandsnaam.ext"
+}
