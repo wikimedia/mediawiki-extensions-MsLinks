@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Crochet.david"
+			"Crochet.david",
+			"Wladek92"
 		]
 	},
-	"msl-tooltip": "Lien direct"
+	"msl-tooltip": "Lien direct",
+	"msl-example-filename": "NomDeFichier.extension"
 }
