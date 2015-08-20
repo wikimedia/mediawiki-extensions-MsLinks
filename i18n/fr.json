@@ -2,9 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"Crochet.david",
-			"Wladek92"
+			"Wladek92",
+			"Gomoko"
 		]
 	},
+	"msl-desc": "Crée des liens pour afficher ou télécharger des fichiers en utilisant les icônes appropriées au type de fichier",
 	"msl-tooltip": "Lien direct",
 	"msl-example-filename": "NomDeFichier.extension"
 }
