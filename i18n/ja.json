@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Otokoume"
+		]
+	},
+	"msl-desc": "ファイルの種類に適切なアイコンを使用し、表示するためのリンクやダウンロードファイルを作成します",
+	"msl-tooltip": "直接リンク",
+	"msl-example-filename": "Filename.ext"
+}
