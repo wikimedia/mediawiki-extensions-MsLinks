@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Okras"
+		]
+	},
+	"msl-desc": "Создаёт ссылки для просмотра или загрузки файлов в виде иконок, соответствующих типу файла",
+	"msl-tooltip": "Прямая ссылка",
+	"msl-example-filename": "Filename.ext"
+}
