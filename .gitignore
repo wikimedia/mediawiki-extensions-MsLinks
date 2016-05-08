@@ -1,5 +1,5 @@
 .DS_Store
-.svn
 *~
 *.kate-swp
 .*.swp
+node_modules/**
