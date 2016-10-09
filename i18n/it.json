@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Selven"
+		]
+	},
+	"msl-desc": "Crea collegamenti per vedere o scaricare file, usando icone appropriate al tipo di file",
+	"msl-tooltip": "Collegamento diretto",
+	"msl-example-filename": "Nomefile.ext"
+}
