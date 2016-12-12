@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"!Silent"
+		]
+	},
+	"msl-desc": "Criar links para ver ou baixar arquivos usando ícones apropriados para o tipo de arquivo",
+	"msl-tooltip": "Link direto",
+	"msl-example-filename": "Nomedoarquivo.ext"
+}
