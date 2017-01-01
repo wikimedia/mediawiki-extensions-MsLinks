@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jon Harald Søby"
+		]
+	},
+	"msl-desc": "Skaper lenker for å vise eller laste ned filer med ikoner som passer den enkelte filtypen",
+	"msl-tooltip": "Direktelenke",
+	"msl-example-filename": "Filnavn.ext"
+}
