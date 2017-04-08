@@ -30,7 +30,7 @@ class MsLinks {
 		}
 
 		try {
-			$title = Title::newFromText( $url, NS_IMAGE );
+			$title = Title::newFromText( $url, NS_FILE );
 			$file = function_exists( 'wfFindFile' ) ? wfFindFile( $title ) : new Image( $title );
 			$base = ( is_object( $file ) && $file->exists() ) ? ':Image' : 'Media';
 		} catch( Exception $exception ) {
