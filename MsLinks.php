@@ -1,27 +1,30 @@
 <?php
 
-$wgExtensionCredits['parserhook'][] = array(
+$wgExtensionCredits['parserhook'][] = [
 	'name' => 'MsLinks',
 	'url' => 'https://www.mediawiki.org/wiki/Extension:MsLinks',
-	'version' => '4.0',
+	'version' => '5.0',
 	'descriptionmsg' => 'msl-desc',
 	'license-name' => 'GPL-2.0+',
-	'author' => array( '[mailto:wiki@ratin.de Martin Schwindl]', '[mailto:wiki@keyler-consult.de Martin Keyler]', '[https://www.mediawiki.org/wiki/User:Luis_Felipe_Schenone Luis Felipe Schenone]' ),
-);
+	'author' => [
+		'[mailto:wiki@ratin.de Martin Schwindl]',
+		'[mailto:wiki@keyler-consult.de Martin Keyler]',
+		'[https://www.mediawiki.org/wiki/User:Sophivorus Sophivorus]'
+	],
+];
 
-$wgResourceModules['ext.MsLinks'] = array(
+$wgResourceModules['ext.MsLinks'] = [
 	'scripts' => 'MsLinks.js',
-	'messages' => array(
+	'messages' => [
 		'msl-tooltip',
 		'msl-example-filename',
-	),
+	],
 	'localBasePath' => __DIR__,
 	'remoteExtPath' => 'MsLinks',
-);
+];
 
 $wgAutoloadClasses['MsLinks'] = __DIR__ . '/MsLinks.body.php';
 
-$wgExtensionMessagesFiles['MsLinks'] = __DIR__ . '/MsLinks.i18n.php';
 $wgMessagesDirs['MsLinks'] = __DIR__ . '/i18n';
 
 $wgHooks['ParserFirstCallInit'][] = 'MsLinks::setHook';
@@ -29,7 +32,7 @@ $wgHooks['EditPage::showEditForm:initial'][] = 'MsLinks::start';
 $wgHooks['LanguageGetMagic'][] = 'MsLinks::getMagicWord';
 
 // Default configuration
-$wgMSL_FileTypes = array(
+$wgMSL_FileTypes = [
 	'no' => 'no_icon.png',
 	'jpg' => 'image_icon.png',
 	'gif' => 'image_icon.png',
@@ -68,4 +71,4 @@ $wgMSL_FileTypes = array(
 	'mp3' => 'music_icon.png',
 	'wav' => 'music_icon.png',
 	'mid' => 'music_icon.png',
-);
+];

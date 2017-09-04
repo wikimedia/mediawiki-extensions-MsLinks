@@ -16,7 +16,7 @@ class MsLinks {
 	}
 
 	static function getMagicWord( &$magicWords, $langCode ) {
-		$magicWords['mslink'] = array( 0, 'l' );
+		$magicWords['mslink'] = [ 0, 'l' ];
 		return true;
 	}
 
