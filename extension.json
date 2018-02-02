@@ -10,6 +10,9 @@
 	"descriptionmsg": "msl-desc",
 	"license-name": "GPL-2.0+",
 	"type": "parserhook",
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	},
 	"MessagesDirs": {
 		"MsLinks": [
 			"i18n"
