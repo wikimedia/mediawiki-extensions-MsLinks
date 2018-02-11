@@ -73,4 +73,4 @@ $wgMSL_FileTypes = [
 
 * Developed and coded by Martin Schwindl (wiki@ratin.de)
 * Idea, project management and bug fixing by Martin Keyler (wiki@keyler-consult.de)
-* Updated, debugged and enhanced by Luis Felipe Schenone (schenonef@gmail.com)
+* Updated, debugged and enhanced by Felipe Schenone (schenonef@gmail.com)
