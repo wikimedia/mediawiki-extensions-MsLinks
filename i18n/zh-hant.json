@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kly"
+		]
+	},
+	"msl-desc": "使用對應檔案類型的圖標來建立連結以檢視或下載檔案",
+	"msl-tooltip": "直接連結",
+	"msl-example-filename": "檔案名稱.ext"
+}
