@@ -5,7 +5,7 @@ $wgExtensionCredits['parserhook'][] = [
 	'url' => 'https://www.mediawiki.org/wiki/Extension:MsLinks',
 	'version' => '5.0',
 	'descriptionmsg' => 'msl-desc',
-	'license-name' => 'GPL-2.0+',
+	'license-name' => 'GPL-2.0-or-later',
 	'author' => [
 		'[mailto:wiki@ratin.de Martin Schwindl]',
 		'[mailto:wiki@keyler-consult.de Martin Keyler]',
