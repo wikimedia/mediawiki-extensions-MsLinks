@@ -18,6 +18,9 @@
 			"i18n"
 		]
 	},
+	"ExtensionMessagesFiles": {
+		"MsLinksMagic": "MsLinks.i18n.magic.php"
+	},
 	"AutoloadClasses": {
 		"MsLinks": "MsLinks.body.php"
 	},
@@ -36,8 +39,7 @@
 	},
 	"Hooks": {
 		"ParserFirstCallInit": "MsLinks::setHook",
-		"EditPage::showEditForm:initial": "MsLinks::start",
-		"LanguageGetMagic": "MsLinks::getMagicWord"
+		"EditPage::showEditForm:initial": "MsLinks::start"
 	},
 	"config": {
 		"MSL_FileTypes": {

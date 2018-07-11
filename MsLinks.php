@@ -26,10 +26,10 @@ $wgResourceModules['ext.MsLinks'] = [
 $wgAutoloadClasses['MsLinks'] = __DIR__ . '/MsLinks.body.php';
 
 $wgMessagesDirs['MsLinks'] = __DIR__ . '/i18n';
+$wgExtensionMessagesFiles['MsLinks'] = __DIR__ . '/MsLinks.i18n.magic.php';
 
 $wgHooks['ParserFirstCallInit'][] = 'MsLinks::setHook';
 $wgHooks['EditPage::showEditForm:initial'][] = 'MsLinks::start';
-$wgHooks['LanguageGetMagic'][] = 'MsLinks::getMagicWord';
 
 // Default configuration
 $wgMSL_FileTypes = [
