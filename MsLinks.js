@@ -5,7 +5,7 @@ var msl_post = "}}";
 
 if ( $.inArray( mw.config.get( 'wgAction' ), [ 'edit', 'submit' ] ) !== -1 ) {
 	mw.loader.using( 'user.options', function () {
-		if ( mw.user.options.get( 'usebetatoolbar' ) && mw.user.options.get( 'showtoolbar' ) ) {
+		if ( mw.user.options.get( 'usebetatoolbar' ) ) {
 			$.when(
 				mw.loader.using( 'ext.wikiEditor.toolbar' ), $.ready
 			).then( msl_addButton1 );
