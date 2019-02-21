@@ -3,10 +3,10 @@
 class MsLinks {
 
 	static function start() {
-		global $wgOut, $wgJsMimeType, $wgScriptPath;
+		global $wgOut, $wgScriptPath;
 		$wgOut->addModules( 'ext.MsLinks' );
 		$path = $wgScriptPath . '/extensions/MsLinks';
-		$wgOut->addScript( "<script type=\"$wgJsMimeType\">var msl_icon_path = \"$path\";</script>" );
+		$wgOut->addScript( "<script type=\"text/javascript\">var msl_icon_path = \"$path\";</script>" );
 		return true;
 	}
 
