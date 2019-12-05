@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"BaRaN6161 TURK"
+		]
+	},
+	"msl-desc": "Dosya türüne uygun simgeleri kullanarak dosyaları görüntülemek veya indirmek için bağlantılar oluşturur",
+	"msl-tooltip": "Doğrudan bağlantı",
+	"msl-example-filename": "Dosyaadı.ext"
+}
