@@ -5,7 +5,7 @@
 			"Hamilton Abreu"
 		]
 	},
-	"msl-desc": "Cria ligações para consultar ou descarregar ficheiros que utilizem ícones apropriados à extensão do ficheiro",
+	"msl-desc": "Cria hiperligações para ver ou descarregar ficheiros usando ícones apropriados para o tipo de ficheiro",
 	"msl-tooltip": "Hiperligação direta",
 	"msl-example-filename": "Nomedoficheiro.ext"
 }
