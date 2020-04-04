@@ -1,5 +1,7 @@
 <?php
 
+use MediaWiki\MediaWikiServices;
+
 class MsLinks {
 
 	static function start() {
@@ -31,7 +33,12 @@ class MsLinks {
 
 		try {
 			$title = Title::newFromText( $url, NS_FILE );
-			$file = function_exists( 'wfFindFile' ) ? wfFindFile( $title ) : new Image( $title );
+			if ( method_exists( MediaWikiServices::class, 'getRepoGroup' ) ) {
+				// MediaWiki 1.34+
+				$file = MediaWikiServices::getInstance()->getRepoGroup()->findFile( $title );
+			} else {
+				$file = wfFindFile( $title );
+			}
 			$base = ( is_object( $file ) && $file->exists() ) ? ':Image' : 'Media';
 		} catch( Exception $exception ) {
 			$base = 'Media';
