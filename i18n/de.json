@@ -1,8 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Sophivorus",
-			"Metalhead64"
+			"Metalhead64",
+			"Sophivorus"
 		]
 	},
 	"msl-desc": "Erzeugt Links zum Betrachten oder Herunterladen von Dateien mithilfe dem Dateityp entsprechender Symbole",

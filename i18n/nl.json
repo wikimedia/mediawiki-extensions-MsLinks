@@ -2,8 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Esketti",
-			"Siebrand",
-			"Mainframe98"
+			"Mainframe98",
+			"Siebrand"
 		]
 	},
 	"msl-desc": "Maakt koppelingen voor het weergeven of downloaden van bestanden met behulp van pictogrammen, geschikt voor het bestandstype",

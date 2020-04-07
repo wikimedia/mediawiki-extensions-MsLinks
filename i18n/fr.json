@@ -2,8 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Crochet.david",
-			"Wladek92",
-			"Gomoko"
+			"Gomoko",
+			"Wladek92"
 		]
 	},
 	"msl-desc": "Crée des liens pour afficher ou télécharger des fichiers en utilisant les icônes appropriées au type de fichier",

@@ -1,8 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Vitorvicentevalente",
-			"Hamilton Abreu"
+			"Hamilton Abreu",
+			"Vitorvicentevalente"
 		]
 	},
 	"msl-desc": "Cria hiperligações para ver ou descarregar ficheiros usando ícones apropriados para o tipo de ficheiro",
