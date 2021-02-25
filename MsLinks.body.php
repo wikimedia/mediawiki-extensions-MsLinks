@@ -62,7 +62,7 @@ class MsLinks {
 				$image = "<img title=\"$extension\" src=\"$wgScriptPath/extensions/MsLinks/images/$value\">"; 
 			}
 		}
-		$image = $parser->insertStripItem( $image, $parser->mStripState );
+		$image = $parser->insertStripItem( $image );
 
 		if ( $type !== 'vlink' and $type !== 'dlink' ) {
 			$base = 'Media';
