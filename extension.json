@@ -1,6 +1,6 @@
 {
 	"name": "MsLinks",
-	"version": "5.1",
+	"version": "5.2",
 	"author": [
 		"[mailto:wiki@ratin.de Martin Schwindl]",
 		"[mailto:wiki@keyler-consult.de Martin Keyler]",
@@ -26,7 +26,7 @@
 	},
 	"ResourceModules": {
 		"ext.MsLinks": {
-			"scripts": "MsLinks.js",
+			"packageFiles": "MsLinks.js",
 			"messages": [
 				"msl-tooltip",
 				"msl-example-filename"
