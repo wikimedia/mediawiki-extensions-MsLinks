@@ -25,7 +25,7 @@ class MsLinks {
 	static function render( $parser, $type = 'no', $url = '', $description = '', $align = '' ) {
 		global $wgOut, $wgScriptPath, $wgMSL_FileTypes;
 
-		if ( $type !== 'dlink' and $type !== 'vlink' ) {
+		if ( $type !== 'dlink' && $type !== 'vlink' ) {
 			$align = $description;
 			$description = $url;
 			$url = $type;
@@ -39,8 +39,8 @@ class MsLinks {
 			} else {
 				$file = wfFindFile( $title );
 			}
-			$base = ( is_object( $file ) && $file->exists() ) ? ':Image' : 'Media';
-		} catch( Exception $exception ) {
+			$base = ( is_object( $file ) && $file->exists() && $type !== 'dlink'  && $type !== 'vlink' ) ? ':Image' : 'Media';
+		} catch ( Exception $exception ) {
 			$base = 'Media';
 		} 
 
@@ -53,7 +53,7 @@ class MsLinks {
 			}
 		}
 
-		//Defaults
+		// Defaults
 		$wikitext = "[[$base:$url|$description]]";
 		$image = "<img src=\"$wgScriptPath/extensions/MsLinks/images/" . $wgMSL_FileTypes['no'] . "\">";
 
@@ -63,11 +63,6 @@ class MsLinks {
 			}
 		}
 		$image = $parser->insertStripItem( $image );
-
-		if ( $type !== 'vlink' and $type !== 'dlink' ) {
-			$base = 'Media';
-		}
-
 		$image = "[[$base:$url|$image]]";
 
 		if ( $align === 'right' ) { 
