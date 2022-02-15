@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Otokoume"
+			"Otokoume",
+			"MirukuPC"
 		]
 	},
-	"msl-desc": "ファイルの種類に適切なアイコンを使用し、表示するためのリンクやダウンロードファイルを作成します",
+	"msl-desc": "ファイルの種類に応じたアイコンを使用し、表示するためのリンクやダウンロードのためのリンクを作成します",
 	"msl-tooltip": "直接リンク",
 	"msl-example-filename": "Filename.ext"
 }
