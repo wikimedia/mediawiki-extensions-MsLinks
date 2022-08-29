@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"msl-desc": "Crea ligamines pro vider o discargar files usante icones appropriate al typo del file",
+	"msl-tooltip": "Ligamine directe",
+	"msl-example-filename": "NomineDeFile.ext"
+}
