@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Guycn2"
 		]
 	},
 	"msl-desc": "הצגת קישורים להצגה או הורדה של קבצים על־ידי שימוש בסמלים המתאימים לסוג הקובץ",
-	"msl-tooltip": "קישור ישיר"
+	"msl-tooltip": "קישור ישיר",
+	"msl-example-filename": "שם קובץ.ext"
 }
