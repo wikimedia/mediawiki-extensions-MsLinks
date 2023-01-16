@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eleassar"
+		]
+	},
+	"msl-desc": "Ustvari povezave za ogled ali prenos datotek z uporabo ikon, ki ustrezajo vrsti datoteke",
+	"msl-tooltip": "Neposredna povezava",
+	"msl-example-filename": "ImeDatoteke.ext"
+}
