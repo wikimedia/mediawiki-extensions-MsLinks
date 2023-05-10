@@ -3,10 +3,11 @@
 		"authors": [
 			"Crochet.david",
 			"Gomoko",
-			"Wladek92"
+			"Wladek92",
+			"Verdy p"
 		]
 	},
 	"msl-desc": "Crée des liens pour afficher ou télécharger des fichiers en utilisant les icônes appropriées au type de fichier",
 	"msl-tooltip": "Lien direct",
-	"msl-example-filename": "NomDeFichier.extension"
+	"msl-example-filename": "NomDeFichier.ext"
 }
