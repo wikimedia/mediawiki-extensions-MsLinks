@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Nokeoo"
+		]
+	},
+	"msl-desc": "Sukuria nuorodas failams peržiūrėti ar atsisiųsti naudojant failo tipui tinkamas piktogramas",
+	"msl-tooltip": "Tiesioginė nuoroda",
+	"msl-example-filename": "Failopavadinimas.ext"
+}
