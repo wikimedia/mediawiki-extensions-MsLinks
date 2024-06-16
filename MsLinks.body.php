@@ -4,72 +4,61 @@ use MediaWiki\MediaWikiServices;
 
 class MsLinks {
 
-	static function start() {
-		global $wgOut, $wgScriptPath;
-		$wgOut->addModules( 'ext.MsLinks' );
-		$path = $wgScriptPath . '/extensions/MsLinks';
-		$wgOut->addScript( "<script type=\"text/javascript\">var msl_icon_path = \"$path\";</script>" );
-		return true;
+	static function onShowEditFormInitial( EditPage $editPage, OutputPage $output ) {
+		$output->addModules( 'ext.MsLinks' );
 	}
 
-	static function setHook( &$parser ) {
-		$parser->setFunctionHook( 'mslink', 'MsLinks::render' );
-		return true;
+	static function onParserFirstCallInit( Parser $parser ) {
+		$parser->setFunctionHook( 'mslink', 'MsLinks::makeLink' );
 	}
 
-	static function getMagicWord( &$magicWords, $langCode ) {
-		$magicWords['mslink'] = [ 0, 'l' ];
-		return true;
-	}
-
-	static function render( $parser, $type = 'no', $url = '', $description = '', $align = '' ) {
-		global $wgOut, $wgScriptPath, $wgMSL_FileTypes;
-
+	static function makeLink( $parser, $type = 'no', $filename = '', $description = '', $align = '' ) {
 		if ( $type !== 'dlink' && $type !== 'vlink' ) {
 			$align = $description;
-			$description = $url;
-			$url = $type;
+			$description = $filename;
+			$filename = $type;
 		}
 
 		try {
-			$title = Title::newFromText( $url, NS_FILE );
-			if ( method_exists( MediaWikiServices::class, 'getRepoGroup' ) ) {
-				// MediaWiki 1.34+
-				$file = MediaWikiServices::getInstance()->getRepoGroup()->findFile( $title );
-			} else {
-				$file = wfFindFile( $title );
-			}
-			$base = ( is_object( $file ) && $file->exists() && $type !== 'dlink'  && $type !== 'vlink' ) ? ':Image' : 'Media';
+			$title = Title::newFromText( $filename, NS_FILE );
+			$file = MediaWikiServices::getInstance()->getRepoGroup()->findFile( $title );
+			$namespace = ( is_object( $file ) && $file->exists() && $type !== 'dlink'  && $type !== 'vlink' ) ? ':Image' : 'Media';
 		} catch ( Exception $exception ) {
-			$base = 'Media';
+			$namespace = 'Media';
 		} 
 
-		$extension = strtolower( substr( strrchr( $url, '.' ), 1 ) );
+		$extension = strtolower( substr( strrchr( $filename, '.' ), 1 ) );
 		if ( !$description ) {
 			if ( $extension ) {
-				$description = substr( $url, 0, ( strlen( $url ) - ( strlen( $extension ) + 1 ) ) );
+				$description = substr( $filename, 0, ( strlen( $filename ) - ( strlen( $extension ) + 1 ) ) );
 			} else {
-				$description = $url;
+				$description = $filename;
 			}
 		}
 
-		// Defaults
-		$wikitext = "[[$base:$url|$description]]";
-		$image = "<img src=\"$wgScriptPath/extensions/MsLinks/images/" . $wgMSL_FileTypes['no'] . "\">";
-
-		foreach ( $wgMSL_FileTypes as $key => $value ) { 
+		// Icon
+		$config = MediaWikiServices::getInstance()->getMainConfig();
+		$path = $config->get( 'ScriptPath' );
+		$filetypes = $config->get( 'MSL_FileTypes' );
+		$icon = $filetypes['no'];
+		foreach ( $filetypes as $key => $value ) { 
 			if ( $key === $extension ) {
-				$image = "<img title=\"$extension\" src=\"$wgScriptPath/extensions/MsLinks/images/$value\">"; 
+				$icon = $value;
+				break;
 			}
 		}
+		$image = '<img src="' . $path . '/extensions/MsLinks/images/' . $icon . '" />';
 		$image = $parser->insertStripItem( $image );
-		$image = "[[$base:$url|$image]]";
+		$image = "[[Media:$filename|$image]]";
 
+		// File link
+		$wikitext = "[[$namespace:$filename|$description]]";
 		if ( $align === 'right' ) { 
 			$wikitext = $wikitext . ' ' . $image;
 		} else {
-			$wikitext = $image . ' ' . $wikitext;
+			$wikitext = $image.' ' . $wikitext;
 		}
+
 		return $wikitext;
 	}
 }

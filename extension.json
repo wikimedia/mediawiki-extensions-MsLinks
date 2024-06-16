@@ -1,6 +1,6 @@
 {
 	"name": "MsLinks",
-	"version": "5.3",
+	"version": "6.0",
 	"author": [
 		"[mailto:wiki@ratin.de Martin Schwindl]",
 		"[mailto:wiki@keyler-consult.de Martin Keyler]",
@@ -11,7 +11,7 @@
 	"license-name": "GPL-2.0-or-later",
 	"type": "parserhook",
 	"requires": {
-		"MediaWiki": ">= 1.29.0"
+		"MediaWiki": ">= 1.39.0"
 	},
 	"MessagesDirs": {
 		"MsLinks": [
@@ -38,8 +38,8 @@
 		"remoteExtPath": "MsLinks"
 	},
 	"Hooks": {
-		"ParserFirstCallInit": "MsLinks::setHook",
-		"EditPage::showEditForm:initial": "MsLinks::start"
+		"ParserFirstCallInit": "MsLinks::onParserFirstCallInit",
+		"EditPage::showEditForm:initial": "MsLinks::onShowEditFormInitial"
 	},
 	"config": {
 		"MSL_FileTypes": {
