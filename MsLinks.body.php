@@ -1,6 +1,8 @@
 <?php
 
+use MediaWiki\EditPage\EditPage;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Title\Title;
 
 class MsLinks {
 
