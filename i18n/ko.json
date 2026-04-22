@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Hwangjy9"
+			"Hwangjy9",
+			"Tensama0415"
 		]
 	},
+	"msl-desc": "파일 형식에 맞는 아이콘을 사용하여 파일을 보거나 다운로드할 수 있는 링크를 생성합니다",
 	"msl-tooltip": "직접 링크",
 	"msl-example-filename": "Filename.ext"
 }
