@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Wizzard"
+		]
+	},
+	"msl-desc": "Vytvára odkazy na zobrazenie alebo stiahnutie súborov s ikonami zodpovedajúcimi typu súboru",
+	"msl-tooltip": "Priamy odkaz",
+	"msl-example-filename": "Nazovsuboru.pripona"
+}
